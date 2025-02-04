@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 SELECT_ACTION, SELECT_CURRENCY, ENTER_AMOUNT = range(3)
 
 # Ваш API-ключ для CurrencyAPI (замените на свой ключ)
-API_KEY = "cur_live_csQZaIIznDxfN4N7mC9VarXTCLhbkG1yEEpFNFvW"
+API_KEY = "ваш_токен"
 
 # URL для получения курсов валют (используем CurrencyAPI)
 BASE_URL = f"https://api.currencyapi.com/v3/latest?apikey={API_KEY}&base_currency=RUB"
@@ -182,7 +182,7 @@ async def error_handler(update: object, context: CallbackContext):
 # Главная функция
 async def main():
     # Замените YOUR_TELEGRAM_BOT_TOKEN на ваш токен бота
-    application = Application.builder().token("7911852095:AAEvmhtf03Vi1IUFZcylxzyVR26TwPlv6IY").build()
+    application = Application.builder().token("токен, который вы сгенинируете с помощью @BotFather").build()
 
     # Добавление обработчиков
     conv_handler = ConversationHandler(
